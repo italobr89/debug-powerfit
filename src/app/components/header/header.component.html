@@ -1,0 +1,34 @@
+<header class="cabecalho d-flex align-items-center">
+    <div class="row w-100">
+        <div class="logo-container col-6 d-flex align-items-center">
+            <img [src]="globalService.logoUrl" alt="Logo" class="logo img-fluid ms-2">
+            <span class="titulo ms-1">PowerFit</span>
+        </div>
+        <div class="col-6 d-flex justify-content-end align-items-center">
+            <button (click)="verMenu()" class="btn btn-nav d-block d-xl-none">≡</button>
+            <ul class="menu-lista list-group list-group-flush d-none d-xl-flex flex-row align-items-center">
+                <li class="sem-marcadores px-3"><a href="#home">Home</a></li>
+                <li class="sem-marcadores px-3"><a href="#planos">Planos</a></li>
+                <li class="sem-marcadores px-3"><a href="#experiencia">Experiência</a></li>
+                <li class="sem-marcadores px-3"><a href="#produtos">Loja</a></li>
+                <li class="sem-marcadores px-3"><a href="#equipe">Equipe</a></li>
+                <li class="sem-marcadores px-3"><a href="#opinioes">Opiniões</a></li>
+                <li class="sem-marcadores px-3"><a href="" [routerLink]="['/curriculo']">Trabalhe Conosco</a></li>
+                <li class="sem-marcadores px-3"><a href="#footer">Contato</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<nav *ngIf="visivel" class="lista d-xl-none">
+    <ul class="menu-lista list-group list-group-flush d-flex justify-content-center align-items-center">
+        <li class="sem-marcadores py-3"><a href="#home">Home</a></li>
+        <li class="sem-marcadores py-3"><a href="#planos">Planos</a></li>
+        <li class="sem-marcadores py-3"><a href="#experiencia">Experiência</a></li>
+        <li class="sem-marcadores py-3"><a href="#produtos">Loja</a></li>
+        <li class="sem-marcadores py-3"><a href="#equipe">Equipe</a></li>
+        <li class="sem-marcadores py-3"><a href="#opinioes">Opiniões</a></li>
+        <li class="sem-marcadores py-3"><a href="" [routerLink]="['/curriculo']">Trabalhe Conosco</a></li>
+        <li class="sem-marcadores py-3"><a href="#footer">Contato</a></li>
+    </ul>
+</nav>

@@ -1,0 +1,62 @@
+.logo-container {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo {
+    width: 40%;
+    max-width: 110px;
+}
+
+.titulo {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.3em;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.btn-nav {
+    color: black;
+    background-color: transparent;
+    border: none;
+    font-size: 3em;
+}
+
+.menu-lista li {
+    font-size: 1.2em;
+    border: 1px solid rgba(183, 164, 164, 0);
+    width: 100%;
+    text-align: center;
+}
+
+.menu-lista li a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-lista li a:hover {
+    color: #C61A10;
+}
+
+.menu-lista li:hover {
+    background-color: rgba(183, 164, 164, 0.1);
+    color: #333;
+    border: 1px solid rgba(183, 164, 164, 0.5);
+    cursor: pointer;
+}
+
+.list-group-item {
+    text-decoration: none;
+}
+
+@media (min-width: 1200px) {
+    .menu-lista li:hover {
+        background-color: white;
+        color: #333;
+        transform: none;
+        border: none;
+        cursor: pointer;
+    }
+}

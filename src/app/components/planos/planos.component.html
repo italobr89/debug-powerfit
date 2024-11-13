@@ -1,0 +1,17 @@
+<div class="planos container-fluid p-2">
+    <h3 class="text-center mt-4">Nossos Planos</h3>
+    <p class="text-center ms-md-5 me-md-5">Comece a transformar sua saúde hoje mesmo! Na PowerFit, oferecemos o pacote de serviços perfeito para ajudá-lo a atingir suas metas de bem-estar. Compare nossos planos e escolha o que melhor se adapta ao seu estilo de vida e orçamento. Venha descobrir como é fácil cuidar de você!</p>
+
+    <div class="row mt-4 text-center d-flex justify-content-center mx-2">
+        <div class="col-md-3 mb-4" *ngFor="let plano of globalService.planos">
+            <div class="card h-100">
+                <img [src]="plano.imagem" class="card-img-top" alt="Imagem do plano">
+                <div class="card-body">
+                    <h5 class="card-title">{{ plano.tipo }}</h5>
+                    <p *ngFor="let item of plano.vantagens">{{ item }}</p>
+                    <p class="preco text-success fw-bold mt-3">R$ {{ plano.preco }},00</p>
+                </div>
+            </div>
+        </div>
+    </div>        
+</div>
